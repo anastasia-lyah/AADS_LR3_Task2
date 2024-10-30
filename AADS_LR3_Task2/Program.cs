@@ -25,25 +25,6 @@ namespace AADS_LR3_Task2
             Console.WriteLine("Стек очищено.");
             Console.ResetColor();
         }
-        static void PushElement(Stack<int> stack, int element)
-        {
-            stack.Push(element);
-            Console.WriteLine($"Елемент {element} додано до стека.");
-        }
-        static int PopElement(Stack<int> stack)
-        {
-            if (stack.Count > 0)
-            {
-                int removedElement = stack.Pop();
-                Console.WriteLine($"Елемент {removedElement} видалено зi стека.");
-                return removedElement;
-            }
-            else
-            {
-                Console.WriteLine("Стек порожнiй.");
-                return -1; 
-            }
-        }
         static void PrintStack(Stack<int> stack)
         {
             Console.ForegroundColor = ConsoleColor.DarkMagenta;
